@@ -43,7 +43,7 @@
                         <td>@Html.DisplayFor(m=>item.ISBN)</td>
                         <td>
                             <button class="btn btn-danger">Delete</button>
-                            <button class="btn btn-success">Edit</button>
+                            <a class="btn btn-success" asp-page="Edit" asp-route-id="@item.Id">Edit</a>
                         </td>
                     </tr>
                 }
